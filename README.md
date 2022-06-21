@@ -43,9 +43,13 @@ class Greeter {
     return 'hello'
   }
 }
+
+module.exports = { Greeter };
 ```
 
-First, write your feature in `features/greeting.feature`:
+Save this file within your `src` folder.
+
+Next, write your feature in `features/greeting.feature`:
 
 ```gherkin
 Feature: Greeting
@@ -55,7 +59,7 @@ Feature: Greeting
     Then I should have heard "hello"
 ```
 
-Next, implement your steps in `features/support/steps.js`:
+Then, implement your steps in `features/support/steps.js`:
 
 ```js
 const assert = require('assert')
